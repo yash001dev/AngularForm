@@ -5,6 +5,7 @@ import {Routes, RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TempletDrivenFromComponent } from './templet-driven-from/templet-driven-from.component';
+import { NewComponent } from './new/new.component';
 
 const routes:Routes=[
   {
@@ -15,13 +16,18 @@ const routes:Routes=[
   {
     path:'reactive',
     component:ReactiveFormComponent
+  },
+  {
+    path:'new',
+    component:NewComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormComponent,
-    TempletDrivenFromComponent
+    TempletDrivenFromComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule,
